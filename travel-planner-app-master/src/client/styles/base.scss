@@ -1,0 +1,61 @@
+$font-color: #ddd;
+$font-family: sans-serif;
+
+$themeColorDark: #111;
+$themeColorLight: #ddd;
+$themeColorLightOverlay: #ddddddaf;
+$themeColorAccent1: #2c3c97;
+$themeColorAccent2: #854b08;
+$themeColorAccent3: #882c08;
+
+body {
+  display: flex;
+  flex-direction: column;
+  color: $font-color;
+  font-family: $font-family;
+  font-size: 12px;
+  background-color: $themeColorDark;
+}
+
+h1 {
+  text-align: center;
+  color: $themeColorAccent2;
+  font-size: 1.5em;
+}
+
+#sleeps {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: $themeColorAccent2;
+}
+
+select, input, button {
+  font-size: 0.8em;
+}
+
+label {
+  font-size: 1em;
+}
+
+footer {
+  display: flex;
+  position: static;
+  width: 100%;
+  bottom: 0px;
+  left: 0;
+  padding-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  body {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 901px) {
+  body {
+    font-size: 18px;
+  }
+}
